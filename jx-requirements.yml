@@ -7,31 +7,48 @@ buildPacks:
     gitRef: master
     gitURL: https://github.com/jenkins-x/jxr-packs-kubernetes.git
 cluster:
-  clusterName: ""
   devEnvApprovers:
   - todo
-  environmentGitOwner: "todo"
+  environmentGitOwner: todo
   gitKind: github
   gitName: github
   gitServer: https://github.com
   namespace: jx
-  project:  ""
   provider: eks
   registry: ecr.io
-  zone: ""
 environments:
-- key: dev
-  owner: ""
-  repository: ""
-- key: staging
-  owner: ""
-  repository: ""
-- key: production
-  owner: ""
-  repository: ""
+- ingress:
+    domain: ""
+    externalDNS: false
+    namespaceSubDomain: ""
+    tls:
+      email: ""
+      enabled: false
+      production: false
+  key: dev
+  owner: jenkins-oscar
+  repository: jx3-eks-terraform-vault
+- ingress:
+    domain: ""
+    externalDNS: false
+    namespaceSubDomain: ""
+    tls:
+      email: ""
+      enabled: false
+      production: false
+  key: staging
+- ingress:
+    domain: ""
+    externalDNS: false
+    namespaceSubDomain: ""
+    tls:
+      email: ""
+      enabled: false
+      production: false
+  key: production
 gitops: true
 ingress:
-  domain: ""
+  domain: 54.162.223.169.nip.io
   externalDNS: false
   namespaceSubDomain: -jx.
   tls:
@@ -39,6 +56,8 @@ ingress:
     enabled: false
     production: false
 kaniko: true
+pipelineUser:
+  username: jenkinsx-bot-sposcar
 repository: nexus
 secretStorage: vault
 storage:

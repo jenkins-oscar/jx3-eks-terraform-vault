@@ -1,0 +1,28 @@
+filepath: ""
+environments:
+  default:
+    values:
+    - versionStream/src/fake-secrets.yaml.gotmpl
+    - jx-values-nginx.yaml
+repositories:
+- name: jenkins-x
+  url: https://storage.googleapis.com/chartmuseum.jenkins-x.io
+- name: external-secrets
+  url: https://godaddy.github.io/kubernetes-external-secrets
+- name: jx-labs
+  url: https://storage.googleapis.com/jenkinsxio-labs-private/charts
+- name: jx3
+  url: https://storage.googleapis.com/jenkinsxio/charts
+- name: stable
+  url: https://kubernetes-charts.storage.googleapis.com
+- name: banzaicloud-stable
+  url: https://kubernetes-charts.banzaicloud.com
+releases:
+- chart: stable/nginx-ingress
+  version: 1.39.1
+  name: nginx-ingress
+  namespace: nginx
+  values:
+  - versionStream/charts/stable/nginx-ingress/values.yaml.gotmpl
+templates: {}
+missingFileHandler: ""
