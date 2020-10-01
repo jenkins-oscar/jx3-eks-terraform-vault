@@ -26,7 +26,7 @@ spec:
       kind: Scheduler
       name: default
     dockerRegistryOrg: ""
-    envOrganisation: todo
+    envOrganisation: jenkins-oscar
     gitServer: https://github.com
     gitPublic: true
     helmTemplate: true
