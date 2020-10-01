@@ -64,6 +64,6 @@ spec:
     ignoreOkToTest: false
     joinOrgUrl: ""
     onlyOrgMembers: false
-    trustedOrg: todo
+    trustedOrg: jenkins-oscar
   welcome:
     - message_template: Welcome
