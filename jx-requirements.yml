@@ -9,7 +9,7 @@ buildPacks:
 cluster:
   devEnvApprovers:
   - todo
-  environmentGitOwner: todo
+  environmentGitOwner: jenkins-oscar
   gitKind: github
   gitName: github
   gitServer: https://github.com
