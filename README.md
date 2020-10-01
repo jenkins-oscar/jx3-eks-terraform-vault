@@ -4,7 +4,7 @@ This git repository setups the cloud resources required to run Jenkins X on EKS 
 
 ## Prerequisites
 
-We assume you have access to EKS.
+We assume you have access to **EKS**.
 
 ## Creating/upgrading cloud resources
 
