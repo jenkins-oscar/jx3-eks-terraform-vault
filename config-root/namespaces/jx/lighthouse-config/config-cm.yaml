@@ -64,7 +64,7 @@ data:
         - needs-rebase
         repos:
         - jenkins-oscar/jx3-eks-terraform-vault
-      target_url: http://deck-jx.-jx.54.162.223.169.nip.io
+      target_url: http://deck-jx.-jx.
 kind: ConfigMap
 metadata:
   creationTimestamp: null
