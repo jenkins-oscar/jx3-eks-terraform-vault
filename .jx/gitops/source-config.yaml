@@ -3,3 +3,9 @@ kind: SourceConfig
 metadata:
   creationTimestamp: null
 spec:
+  groups:
+  - owner: jenkins-oscar
+    provider: https://github.com
+    providerKind: github
+    repositories:
+    - name: webcars
