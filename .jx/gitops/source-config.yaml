@@ -9,3 +9,4 @@ spec:
     providerKind: github
     repositories:
     - name: webcars
+    - name: widgets
